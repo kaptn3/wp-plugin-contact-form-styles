@@ -1,0 +1,107 @@
+/* Contact form */
+
+.input-row {
+  display: flex;
+  max-width: 100%;
+}
+.input-row span {
+  max-width: 50%;
+}
+.theme-input,
+.theme-input span,
+.theme-input span input,
+.input-row span input {
+  width: 100%;
+  border-bottom: 0;
+}
+textarea.wpcf7-form-control,
+input.wpcf7-form-control {
+  border-radius: 0;  
+  font-size: 16px;
+  padding: 18px;
+}
+
+textarea.wpcf7-form-control:focus,
+input.wpcf7-form-control:focus {
+  outline: 0;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,.075), 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+.your-name input {
+  border-right: 0;
+}
+.send-form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+span.wpcf7-not-valid-tip {
+  position: absolute;
+  top: -22px;
+  max-width: 100%;
+  font-size: 14px;  
+}
+.theme-input span input.wpcf7-not-valid,
+.input-row span input.wpcf7-not-valid  {
+  border-color: #dc3545;
+  border-bottom: 1px solid #dc3545;
+}
+
+div.wpcf7-response-output {
+  border: 2px solid #dc3545;
+}
+.select-form {
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.select-form label {
+  padding: 6px 12px;
+  background-color: #e9ecef;
+  border: 1px solid #ced4da;
+  border-right: 0;
+  color: #495057;
+  text-align: center;
+  font-weight: 400;
+  margin: 0;
+}
+.select-form span {
+  flex: 1 1 auto;
+}
+.select-form span select {
+  font-size: 16px;
+  height: 100%;
+  width: 100%;
+  margin-bottom: 0;
+  background-color: #fff;
+}
+
+.select-form span select:focus {
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,.075), 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+@media (max-width: 767px) {
+  .select-form,
+  .input-row,
+  .send-form  {
+    flex-direction: column;
+  }
+  .select-form label {
+    border-right: 1px solid #ced4da;
+    border-bottom: 0;
+  }
+  .select-form span select {
+    padding: 12px;
+  }
+  .input-row span {
+    max-width: 100%;
+  }
+  .your-name input {
+    border-right: 1px solid #ced4da;
+  }
+  .g-recaptcha {
+    margin-bottom: 20px;
+  }
+}
