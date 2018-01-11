@@ -1,0 +1,16 @@
+<div class="select-form"><label>Выберите получателя</label>[select*
+         recipient "Выбрать..."
+                   "Username1|mail1@mail.com"
+                   "Username2|mail2@mail.com"]
+</div>
+<div class="input-row">    
+    [text* your-name placeholder "Ваше имя (обязательно)"] [email* your-email placeholder "Ваш e-mail (обязательно)"]
+</div>
+<div class="theme-input">
+    [text your-subject placeholder "Тема"]
+</div>
+    [textarea your-message placeholder "Сообщение"] 
+<div class="send-form">
+    [recaptcha]
+    [submit "Отправить"]
+</div>
